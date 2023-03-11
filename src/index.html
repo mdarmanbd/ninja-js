@@ -46,32 +46,30 @@
                                 </textPath>
                               </text>
                             </g>
-                          </svg>
+                        </svg>
                     </div>
                 </div>
-            </div>
-            
+            </div>   
         </div>
     </div>
-   
-
  <script>
- 
-    let myLet;
-    let myPage;
-       
+    let firstTimeOut;
+    let secondTimeOut; 
     function myFunction() {
-        myLet = setTimeout(showPage, 9700);
-        myPage = setTimeout(showPage02, 15500);
+        firstTimeOut = setTimeout(addAnimation, 9700);
+        secondTimeOut = setTimeout(removeAnimation, 15500);
+        setTimeout(() => {
+            document.getElementById("mySvg").style.display = "block";
+        }, (9500+15500));
     }
-    function showPage() {
+    function addAnimation() {
         document.getElementById("mySvg").style.display = "none";
         document.getElementById("button").classList.add("myButton");
         document.getElementById("h2").classList.add("h2");
         document.getElementById("h3").classList.add("h3");
         document.getElementById("img").classList.add("img");
     }
-    function showPage02(){
+    function removeAnimation(){
         document.getElementById("mySvg").style.display = "block";
         document.getElementById("button").classList.remove("myButton");
         document.getElementById("h2").classList.remove("h2");
@@ -79,8 +77,9 @@
         document.getElementById("img").classList.remove("img");
        
     }
- 
-   
+    setInterval(() => {
+        myFunction();
+    }, 15500);
    
  </script>
 </body>
