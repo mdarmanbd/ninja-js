@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.raleway-font{
+    font-family: 'Raleway', sans-serif;
+}
+.roboto-font{
+    font-family: 'Roboto', sans-serif;
+}
+.firstPageBg{
+    background-image: url(../src/assets/bg.jpg);
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.myButton{
+    position: relative;
+    animation-name: button;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+ .h2{
+    position: relative;
+    animation-name: h2;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.h3{
+    position: relative;
+    animation-name: h3;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+} 
+
+
+   @keyframes h3 {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top:20px;
+        left: 0;
+        transition: 1s;
+        opacity: 0.2;
+    }
+    100%{
+        top:30px;
+        left: 0;
+        transition: 1s;
+        opacity: 0;
+    }
+} 
+
+@keyframes h2 {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top:20px;
+        left: 0;
+        transition: 1s;
+        opacity: 0.2;
+    }
+    100%{
+        top:30px;
+        left: 0;
+        transform: 1s;
+        opacity: 0;
+    }
+}  
+
+@keyframes button {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top:20px;
+        left: 0;
+        transition: 1s;
+        opacity: 0.2;
+    }
+    100%{
+        top:30px;
+        left: 0;
+        transition: 1s;
+        opacity: 0;
+    }
+} 
+
+/* img col  */
+
+.img{
+    position: relative;
+    animation-name: img01;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@keyframes img01 {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top:0;
+        left: 30px;
+        transition: 1s;
+        opacity: 0.2;
+    }
+    100%{
+        top:0;
+        left: 60px;
+        transition: 1s;
+        opacity: 0;
+    }
+}
+
+
+
+#loader {
+    position: absolute;
+    background-color: red;
+    display: grid;
+    place-items: center;
+    min-height: 0vh;
+    overflow: hidden;
+    
+}
+#mySvg {
+    background-color: white;
+    display: grid;
+    place-items: center;
+    min-height: 0vh;
+    overflow: hidden;
+    
+}
+  text {
+    fill: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-variant-ligatures: none;
+    letter-spacing: 10px;
+    animation: rotate 25s linear infinite;
+    transform-origin: 250px 250px;
+  }
+  
+  svg{
+    max-width: 200vmin;
+    position: fixed;
+    top: 45%;
+    left: 5%;
+    right: 0;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(0deg);
+    }
+      from{
+           transform: rotate(360deg);
+      }    
+  }
+
+  .textcircle {
+    transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+    transform-origin: 250px 250px;
+  }
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+  

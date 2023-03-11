@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--raleway font-->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>JS-ninja</title>
+
+  <style>
+
+
+  </style>
+
+</head>
+<body class="firstPageBg" onload="myFunction()" style="margin:0;">
+    <div class="w-full">
+        <div class="w-10/12 m-auto">
+            <div class="grid grid-cols-2 gap-2 ">
+                <div class="w-full mt-28 firstCol">
+                    <h3 id="h3" class="text-48 text-gray font-normal raleway-font capitalize">Become A</h3>
+                    <h2 id="h2" class="text-104 text-gray font-semibold raleway-font capitalize">JS Ninja</h2>
+                    <button id="button" type="button" class=" bg-skyBlue text-20 font-semibold text-center py-1 px-10 rounded-lg raleway-font text-white">Kill the Web</button>
+                </div>
+                <div class="w-full">
+                    <img id="img" class="" src="../src/assets/hero-image.png" alt="hero-img.png">
+                </div>
+                <div class=" ">
+                    <div id="mySvg">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+                            <title>Circular Text Path</title>
+                            <defs>
+                              <path id="textcircle" d="M250,400
+                                           a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
+                            </defs>
+                            <g class="textcircle">
+                              <text textLength="940">
+                                <textPath 
+                                          xlink:href="#textcircle" 
+                                          aria-label="CSS & SVG are awesome" 
+                                          textLength="940">
+                    
+                                 React Node CSS Next Express Nest HTML GSAP 3.JS SASS   &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160
+                                </textPath>
+                              </text>
+                            </g>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+   
+
+ <script>
+ 
+    let myLet;
+    let myPage;
+       
+    function myFunction() {
+        myLet = setTimeout(showPage, 9700);
+        myPage = setTimeout(showPage02, 15500);
+    }
+    function showPage() {
+        document.getElementById("mySvg").style.display = "none";
+        document.getElementById("button").classList.add("myButton");
+        document.getElementById("h2").classList.add("h2");
+        document.getElementById("h3").classList.add("h3");
+        document.getElementById("img").classList.add("img");
+    }
+    function showPage02(){
+        document.getElementById("mySvg").style.display = "block";
+        document.getElementById("button").classList.remove("myButton");
+        document.getElementById("h2").classList.remove("h2");
+        document.getElementById("h3").classList.remove("h3");
+        document.getElementById("img").classList.remove("img");
+       
+    }
+ 
+   
+   
+ </script>
+</body>
+</html>
